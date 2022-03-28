@@ -7,9 +7,7 @@ int main() {
     cout << "Type a sentence: ";
     getline(cin, text);
     
-    int lenght = (int) text.length();
-    
-    for (int i = lenght; i > 0; i--) {
+    for (int i = (int) text.length(); i > 0; i--) {
         cout << text.at(i - 1);
     }
     cout << "\n";
