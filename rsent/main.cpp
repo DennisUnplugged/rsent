@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <vector>
 
 int main() {
     string text;
@@ -10,19 +9,10 @@ int main() {
     
     int lenght = (int) text.length();
     
-    vector< char > chars;
-    
     for (int i = lenght; i > 0; i--) {
-        char x = text.at(i -1);
-        chars.push_back(x);
+        cout << text.at(i - 1);
     }
-    
-    string s = "";
-    for (char c : chars) {
-        s = s + c;
-    }
-    
-    cout << s + "\n";
+    cout << "\n";
     
     return 0;
 }
